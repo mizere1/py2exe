@@ -1,0 +1,86 @@
+# Import the necessary libraries
+import os
+import time
+
+# Define the main function
+def main():
+  # Initialize a counter to keep track of the number of checks passed
+  checks_passed = 0
+
+  # Ask the user if their CV is updated
+  cv_updated = input("Is your CV updated? (yes/no) ")
+  
+  # Check if the user's CV is updated
+  if cv_updated.lower() == "yes":
+    checks_passed += 1
+    print("Great, you're all set!")
+  else:
+    print("You should update your CV before submitting your job application.")
+  
+  # Ask the user if they have included a reference
+  reference_included = input("Have you included a reference in your application? (yes/no) ")
+  
+  # Check if the user has included a reference
+  if reference_included.lower() == "yes":
+    checks_passed += 1
+    print("Great, you're all set!")
+  else:
+    print("You should include a reference in your job application.")
+  
+  # Ask the user if they have checked their grammar
+  grammar_checked = input("Have you checked your grammar? (yes/no) ")
+  
+  # Check if the user has checked their grammar
+  if grammar_checked.lower() == "yes":
+    checks_passed += 1
+    print("Great, you're all set!")
+  else:
+    print("You should check your grammar before submitting your job application.")
+  
+  # Ask the user if they have proofread their application
+  proofread = input("Have you proofread your job application? (yes/no) ")
+  
+  # Check if the user has proofread their application
+  if proofread.lower() == "yes":
+    checks_passed += 1
+    print("Great, you're all set!")
+  else:
+    print("You should proofread your job application before submitting it.")
+  
+  # Ask the user if they have included short course training certificates
+  certificates_included = input("Have you included short course training certificates to increase your chances? (yes/no) ")
+  
+  # Check if the user has included short course training certificates
+  if certificates_included.lower() == "yes":
+    checks_passed += 1
+    print("Great, you're all set!")
+  else:
+    print("Consider including short course training certificates in your job application to increase your chances.")
+  
+  # Ask the user if they have the required qualification
+  qualification = input("Do you have the required qualification for the job? (yes/no) ")
+  
+  # Check if the user has the required qualification
+  if qualification.lower() == "yes":
+    checks_passed += 1
+    print("Great, you're all set!")
+  else:
+    print("You should make sure you have the required qualification before submitting your job application.")
+  
+  # Calculate the percentage of checks passed
+  percentage_passed = (checks_passed / 7) * 100
+  
+  # Print the percentage of checks passed
+  print("You passed {}% of the checks.".format(percentage_passed))
+  
+  # If the percentage of checks passed is less than
+  # If the percentage of checks passed is less than 100, print a message with contact information
+  if percentage_passed < 100:
+    print("If you have any problems with your job application, you can contact us at +265 96 982 449 for assistance.")
+  else:
+    # If the percentage of checks passed is 100, print a message with instructions for submitting the application
+    print("Congratulations, you have passed all the checks! You can now submit your job application by emailing it to the appropriate address.")
+
+# Run the main function
+if __name__ == "__main__":
+  main()
